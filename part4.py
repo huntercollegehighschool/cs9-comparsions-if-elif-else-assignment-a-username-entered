@@ -23,4 +23,5 @@ Enter another number:  -2
 opposite
 '''
 
-#start writing your code below
+num1 = int(input('Enter a number: '))
+num2 = int(input('Enter another number: '))
