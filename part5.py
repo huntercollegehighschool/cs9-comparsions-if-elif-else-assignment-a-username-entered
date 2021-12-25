@@ -23,3 +23,22 @@ not a month
 '''
 
 #start writing your code below
+monthsList = ['January','February','March','April','May','June','July','August','September','October','November','December']
+
+dayslist1 = [0,2,4,6,7,9,11]
+dayslist2 = [3,5,8,10]
+
+month = input('Enter a month: ')
+month = month.capitalize()
+
+#print(monthsList.index(month)) used in debugging
+
+if month in monthsList:
+  if monthsList.index(month) in dayslist1:
+    print('31')
+  elif monthsList.index(month) in dayslist2:
+    print('30')
+  else:
+    print('28 or 29')
+else:
+  print('not a month')
